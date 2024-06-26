@@ -1,8 +1,7 @@
 ---
 import { Picture } from "astro:assets";
-import heroImage from "assets/hero.png";
+import heroImage from "assets/hero.jpg";
 import Link from "@components/ui/link.astro";
-import { Icon } from "astro-icon/components";
 ---
 
 <main
@@ -11,42 +10,29 @@ import { Icon } from "astro-icon/components";
     <Picture
       src={heroImage}
       alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
       loading="eager"
       format="avif"
     />
+    <div class="w-full flex flex-row">
+      <a
+        class="mx-auto text-xs text-gray-500"
+        href="https://www.freepik.com/free-vector/fruit-salad-bowls-hand-drawn-design_7474818.htm#fromView=search&page=2&position=2&uuid=ac76fe69-822c-49c7-8450-d434cff568f5"
+        >Image by freepik</a
+      >
+    </div>
   </div>
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Marketing website done with Astro
+      校园健康攻略
     </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
-    </p>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">健康饮食</p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
         href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
         class="flex gap-1 items-center justify-center"
         rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
-
-        Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
+        开启校园健康之旅
       </Link>
     </div>
   </div>
