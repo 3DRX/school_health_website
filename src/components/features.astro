@@ -7,31 +7,37 @@ const features = [
     title: "首页",
     description: "",
     icon: "bx:bxs-home",
+    href: "/",
   },
   {
     title: "健康饮食",
     description: "营养饮食，助力学业",
     icon: "bx:bxs-bowl-hot",
+    href: "/blog/healthy-diet",
   },
   {
     title: "宿舍健身",
     description: "随时随地，保持活力",
     icon: "bx:dumbbell",
+    href: "/blog/dormitory-fitness",
   },
   {
     title: "心理减压",
     description: "心理平衡，快乐学习",
     icon: "bx:happy-beaming",
+    href: "/blog/psycho-health",
   },
   {
     title: "健康习惯与生活方式",
     description: "培养健康习惯，享受美好生活",
     icon: "bx:leaf",
+    href: "/blog/health-habits",
   },
   {
     title: "社区与互动",
     description: "一起分享，一起成长",
     icon: "bx:body",
+    href: "/blog/community",
   },
 ];
 ---
@@ -49,7 +55,9 @@ const features = [
           <Icon class="text-white" name={item.icon} />
         </div>
         <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <h3 class="font-semibold text-lg">
+            <a href={item.href}>{item.title}</a>
+          </h3>{" "}
           <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
         </div>
       </div>
