@@ -5,9 +5,9 @@ snippet: "心理健康与放松"
 image:
   {
     src: "/psycho.png",
-    alt: "",
+    alt: " ",
   }
-publishDate: "07/02/2024 15:39"
+publishDate: "2024-07-02"
 category: "心理减压"
 author: "xxx"
 tags: [心理健康, 放松, 减压]
